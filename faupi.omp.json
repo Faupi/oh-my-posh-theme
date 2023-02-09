@@ -36,7 +36,7 @@
           "style": "plain",
           "foreground": "#666666",
           "background": "#222222",
-          "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}@{{ .HostName }} "
+          "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} "
         },
         {
           "type": "path",
