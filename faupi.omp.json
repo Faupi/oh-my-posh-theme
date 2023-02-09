@@ -27,22 +27,22 @@
         {
           "type": "os",
           "style": "plain",
-          "foreground": "#777777",
-          "background": "#444444",
+          "foreground": "#666666",
+          "background": "#222222",
           "template": " {{ if .WSL }}\uf68e {{ end }}{{ if .Root }}\uf0e7{{ end }}{{.Icon}}"
         },
         {
           "type": "session",
           "style": "plain",
-          "foreground": "#777777",
-          "background": "#444444",
+          "foreground": "#666666",
+          "background": "#222222",
           "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}@{{ .HostName }} "
         },
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#F8F8F0",
-          "background": "#777777",
+          "foreground": "#cccccc",
+          "background": "#444444",
           "template": " {{ .Path }} ",
           "properties": {
             "folder_icon": "\u2026",
@@ -52,7 +52,7 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#F8F8F0",
+          "foreground": "#f0efe7",
           "background": "#F54C28",
           "template": " {{ .HEAD }} ",
           "properties": {
