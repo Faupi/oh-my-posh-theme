@@ -9,8 +9,8 @@
         {
           "type": "executiontime",
           "style": "plain",
-          "foreground": "black",
-          "background": "lightBlue",
+          "foreground": "#000000",
+          "background": "#1FB0FF",
           "template": " {{ .FormattedMs }} ",
           "properties": {
             "style": "austin",
@@ -20,29 +20,29 @@
         {
           "type": "exit",
           "style": "plain",
-          "foreground": "lightWhite",
-          "background": "lightRed",
+          "foreground": "#F8F8F0",
+          "background": "#FF1F1F",
           "template": "{{ if gt .Code 0 }} {{ .Code }} {{ end }}"
         },
         {
           "type": "os",
           "style": "plain",
-          "foreground": "white",
-          "background": "darkGray",
+          "foreground": "#777777",
+          "background": "#444444",
           "template": " {{ if .WSL }}\uf68e {{ end }}{{ if .Root }}\uf0e7{{ end }}{{.Icon}}"
         },
         {
           "type": "session",
           "style": "plain",
-          "foreground": "white",
-          "background": "darkGray",
+          "foreground": "#777777",
+          "background": "#444444",
           "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}@{{ .HostName }} "
         },
         {
           "type": "path",
           "style": "plain",
-          "foreground": "lightWhite",
-          "background": "white",
+          "foreground": "#F8F8F0",
+          "background": "#777777",
           "template": " {{ .Path }} ",
           "properties": {
             "folder_icon": "\u2026",
@@ -52,8 +52,8 @@
         {
           "type": "git",
           "style": "plain",
-          "foreground": "lightWhite",
-          "background": "red",
+          "foreground": "#F8F8F0",
+          "background": "#F54C28",
           "template": " {{ .HEAD }} ",
           "properties": {
             "branch_icon": "\ue725 ",
